@@ -1,19 +1,28 @@
 {
-  "name": "datum",
-  "version": "0.1.0",
-  "description": "Data storage library which stores metrics.",
-  "main": "lib/datum.js",
-  "scripts": {
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wolfeidau/datum.git"
-  },
-  "keywords": [
-    "metrics",
-    "leveldb"
-  ],
-  "author": "Mark Wolfe <mark@wolfe.id.au>",
-  "license": "MIT"
+    "name": "datum",
+    "version": "0.1.0",
+    "description": "Data storage library which stores metrics.",
+    "main": "lib/datum.js",
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wolfeidau/datum.git"
+    },
+    "keywords": [
+        "metrics",
+        "leveldb"
+    ],
+    "author": "Mark Wolfe <mark@wolfe.id.au>",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/wolfeidau/datum/blob/master/LICENSE-MIT"
+        }
+    ], "devDependencies": {
+    "mocha": "~1.8.1",
+    "chai": "~1.5.0",
+    "sinon": "~1.6.0"
+}
 }
