@@ -43,7 +43,7 @@ describe('Datum', function () {
         var datum;
 
         before(function () {
-            datum = new Datum({store: path.join(tempPath, 'datum_store3')});
+            datum = new Datum({/*debug: true, */store: path.join(tempPath, 'datum_store3')});
         })
 
         it('should enable saving of time a series of metrics', function (done) {

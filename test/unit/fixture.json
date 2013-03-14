@@ -1,66 +1,88 @@
 [
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.rx_2013-03-11T06:11:10.681Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:11:10.681Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:11:20.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:11:20.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:11:30.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:11:30.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:11:40.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:11:40.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:11:50.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:11:50.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:12:00.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:00.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.rx_2013-03-11T06:12:10.681Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:10.681Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:12:20.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:20.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:12:30.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:30.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:12:40.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:40.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
     },
     {
-        "key": "trogdor.fritz.box.interface.en0.if.octets.tx_2013-03-11T06:12:50.685Z",
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if.octets.rx",
+        "date": "2013-03-11T06:12:50.685Z",
         "type": "derive",
         "interval": "10",
         "value": 2002876
