@@ -61,4 +61,28 @@ describe('Datum', function () {
 
     });
 
+    describe('datum', function () {
+
+        var datum;
+
+        before(function () {
+            datum = new Datum({/*debug: true, */store: path.join(tempPath, 'datum_store4')});
+        })
+        it('should peform a map reduce on the inserted keys', function (done) {
+
+            datum.enableMapReduceByMinute();
+
+            datum.save(series, function (writeCount, err) {
+
+                expect(writeCount).to.eql(series.length);
+
+                expect(err).to.not.exist;
+
+                done();
+            });
+
+        });
+
+    });
+
 });
