@@ -2,6 +2,8 @@
 const fs = require('fs')
     , path = require('path')
     , rimraf = require('rimraf')
+    , sinon = require('sinon')
+    , sinonChai = require("sinon-chai")
     , expect = require('chai').expect;
 
 var Datum = require('../../lib/datum');
@@ -70,13 +72,25 @@ describe('Datum', function () {
         })
         it('should peform a map reduce on the inserted keys', function (done) {
 
+            var listener = sinon.spy();
+
+            sinon.log = function (message) {
+                console.log(message);
+            };
+
             datum.enableMapReduceByMinute();
 
             datum.save(series, function (writeCount, err) {
 
                 expect(writeCount).to.eql(series.length);
-
                 expect(err).to.not.exist;
+
+                datum.mapReduceByMinute.on('reduce', listener);
+
+                expect(listener.calledWith('interface.en0.if.octets.rx2013-03-11T06:11',
+                    '{"n":5,"mean":120.2,"m2":20546.8}')).to.be.ok
+                expect(listener.calledWith('interface.en0.if.octets.rx2013-03-11T06:12',
+                    '{"n":6,"mean":125.16666666666667,"m2":78384.83333333333}')).to.be.ok
 
                 done();
             });
