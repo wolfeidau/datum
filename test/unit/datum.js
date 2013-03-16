@@ -4,13 +4,16 @@ const fs = require('fs')
     , rimraf = require('rimraf')
     , sinon = require('sinon')
     , sinonChai = require("sinon-chai")
-    , expect = require('chai').expect;
+    , chai = require('chai');
 
 var Datum = require('../../lib/datum');
 
 var series = require('./fixture.json');
 
+var expect = chai.expect;
+
 var tempPath = './temp';
+
 
 describe('Datum', function () {
 
@@ -80,19 +83,17 @@ describe('Datum', function () {
 
             datum.enableMapReduceByMinute();
 
-            datum.save(series, function (writeCount, err) {
+            datum.mapReduceByMinute.on('reduce', function (key, sum) {
+                if(listener.calledTwice){
+                    done();
+                }
+            });
 
+            datum.mapReduceByMinute.on('reduce', listener);
+
+            datum.save(series, function (writeCount, err) {
                 expect(writeCount).to.eql(series.length);
                 expect(err).to.not.exist;
-
-                datum.mapReduceByMinute.on('reduce', listener);
-
-                expect(listener.calledWith('interface.en0.if.octets.rx2013-03-11T06:11',
-                    '{"n":5,"mean":120.2,"m2":20546.8}')).to.be.ok
-                expect(listener.calledWith('interface.en0.if.octets.rx2013-03-11T06:12',
-                    '{"n":6,"mean":125.16666666666667,"m2":78384.83333333333}')).to.be.ok
-
-                done();
             });
 
         });
