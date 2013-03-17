@@ -44,23 +44,33 @@ describe('BucketCalculator', function () {
             bucketCalculator.setInterval(15, 'minutes');
         });
 
-        it('should return a date truncated based on the period', function () {
-            expect(bucketCalculator.truncateDateByPeriod(dt1)).to.eql('2013-03-11T00:00:00.000Z')
+        it('should calculate the correct index, truncated date and interval start date, for the configured periods', function (done) {
+
+            bucketCalculator.calculate(dt1, function(err, data){
+                expect(data.intervalIndex).to.eql(24);
+                expect(data.truncatedDate).to.eql('2013-03-11T00:00:00.000Z');
+                expect(data.intervalStartDate).to.eql('2013-03-11T06:00:00.000Z')
+
+                done();
+            });
+
         });
 
-        it('should calculate the correct index for the configured period', function () {
 
-            expect(bucketCalculator.calculateIntervalIndex(dt1)).to.eql(24);
-            expect(bucketCalculator.calculateIntervalIndex(dt2)).to.eql(25);
-            expect(bucketCalculator.calculateIntervalIndex(dt3)).to.eql(26);
-            expect(bucketCalculator.calculateIntervalIndex(dt4)).to.eql(27);
+        it('should calculate the correct index for the configured periods', function (done) {
 
-        });
+            bucketCalculator._calculateInterval(dt1, function (err, data) {
+                expect(data.intervalIndex).to.eql(24);
+                expect(data.truncatedDate).to.eql('2013-03-11T00:00:00.000Z');
 
-        it('should calculate the start date of an interval when given a date and an interval index', function(){
+                bucketCalculator._calculateInterval(dt2, function (err, data) {
 
-            expect(bucketCalculator.calculateIntervalStartDateByIndex(dt1, 0)).to.eql('2013-03-11T00:00:00.000Z')
-            expect(bucketCalculator.calculateIntervalStartDateByIndex(dt1, 95)).to.eql('2013-03-11T23:45:00.000Z')
+                    expect(data.intervalIndex).to.eql(25);
+                    expect(data.truncatedDate).to.eql('2013-03-11T00:00:00.000Z');
+
+                    done();
+                });
+            });
 
         });
 
