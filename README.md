@@ -5,7 +5,7 @@ Datum is a javascript module which stores and time series datum, with basic down
 
 # Time Series Data
 
-The aim of this module is to enable management of time series data in a key value store. It will include methods for
+The aim of this module is to enable management of time series data in leveldb. It will include methods for
 storing, retrieving based on a key and a date, along with methods for down sampling this data based on a unit of time.
 
 Initially this will be loosely based on some of the awesome work done in graphite.
