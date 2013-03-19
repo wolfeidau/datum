@@ -53,7 +53,7 @@ describe('Datum', function () {
 
         it('should enable saving of time a series of metrics', function (done) {
 
-            datum.save(series, function (writeCount, err) {
+            datum.save(series, function (err, writeCount) {
 
                 expect(writeCount).to.eql(series.length);
 
@@ -81,17 +81,17 @@ describe('Datum', function () {
                 console.log(message);
             };
 
-            datum.enableMapReduceByMinute();
+            datum.enableMapReduce();
 
-            datum.mapReduceByMinute.on('reduce', function (key, sum) {
+            datum.metricsMapReduce.on('reduce', function (key, sum) {
                 if(listener.calledTwice){
                     done();
                 }
             });
 
-            datum.mapReduceByMinute.on('reduce', listener);
+            datum.metricsMapReduce.on('reduce', listener);
 
-            datum.save(series, function (writeCount, err) {
+            datum.save(series, function (err, writeCount) {
                 expect(writeCount).to.eql(series.length);
                 expect(err).to.not.exist;
             });

@@ -1,0 +1,247 @@
+[
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.stf0.if_errors.rx",
+        "date": "2013-03-16T08:11:36.642Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.stf0.if_errors.tx",
+        "date": "2013-03-16T08:11:36.642Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_octets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 889457
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_octets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 13103.5
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_packets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 603.597
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_packets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 194.899
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_errors.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en1.if_errors.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_octets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_octets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_packets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_packets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_errors.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.en0.if_errors.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_octets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_octets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_packets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_packets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_errors.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.p2p0.if_errors.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_octets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_octets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_packets.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_packets.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_errors.rx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.fw0.if_errors.tx",
+        "date": "2013-03-16T08:11:36.643Z",
+        "type": "derive",
+        "value": 0
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "memory.wired.memory.value",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "gauge",
+        "value": 1486930000
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "load.load.shortterm",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "gauge",
+        "value": 1.08301
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "load.load.midterm",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "gauge",
+        "value": 1.28125
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "load.load.longterm",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "gauge",
+        "value": 1.19385
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.lo0.if_octets.rx",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "derive",
+        "value": 473.207
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.lo0.if_octets.tx",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "derive",
+        "value": 473.207
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "memory.active.memory.value",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "gauge",
+        "value": 2967250000
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.lo0.if_packets.rx",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "derive",
+        "value": 0.800013
+    },
+    {
+        "host": "trogdor.fritz.box",
+        "metric": "interface.lo0.if_packets.tx",
+        "date": "2013-03-16T08:11:46.642Z",
+        "type": "derive",
+        "value": 0.800013
+    }
+]

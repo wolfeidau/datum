@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+
+var optimist = require('optimist');
+var pkgInfo = require('../package.json');
+var datumServer = require('../lib/datum_server');
+var fs = require('fs');
+
+var argv = optimist.usage('Start a test server.\nUsage: $0 [db path]').argv;
+
+if (argv.h) {
+    console.log(optimist.help());
+    process.exit(0);
+}
+
+if (argv.v) {
+    console.log(pkgInfo.name, pkgInfo.version);
+    process.exit(0);
+}
+
+if(argv._){
+    if(argv._.length == 1){
+        var dataPath = argv._.shift();
+
+        fs.stat(dataPath, function (err, stats) {
+
+            if(err){
+                console.error(err);
+                process.exit(0);
+            }
+
+            if(!stats.isDirectory()){
+                console.error("Data directory path not found.");
+                process.exit(0);
+            }
+
+
+            datumServer.createServer({debug: true, store: dataPath}).listen(8000);
+
+        });
+    } else {
+        console.log(optimist.help());
+        process.exit(0);
+     }
+} else {
+    console.log(optimist.help());
+    process.exit(0);
+}
