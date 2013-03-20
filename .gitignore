@@ -2,3 +2,4 @@
 node_modules
 datum_store
 temp
+.DS_Store

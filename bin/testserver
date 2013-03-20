@@ -34,7 +34,7 @@ if(argv._){
             }
 
 
-            datumServer.createServer({debug: true, store: dataPath}).listen(8000);
+            datumServer.createServer({debug: false, store: dataPath}).listen(8000);
 
         });
     } else {

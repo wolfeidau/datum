@@ -1,2 +1,5 @@
-/node_modules/
 .idea
+node_modules
+datum_store
+temp
+.DS_Store

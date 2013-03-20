@@ -3,7 +3,6 @@ const fs = require('fs')
     , path = require('path')
     , rimraf = require('rimraf')
     , sinon = require('sinon')
-    , sinonChai = require("sinon-chai")
     , chai = require('chai');
 
 var Datum = require('../../lib/datum');
