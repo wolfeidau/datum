@@ -72,28 +72,16 @@ describe('Datum', function () {
         before(function () {
             datum = new Datum({/*debug: true, */store: path.join(tempPath, 'datum_store4')});
         })
+
         it('should peform a map reduce on the inserted keys', function (done) {
 
-            var listener = sinon.spy();
-
-            sinon.log = function (message) {
-                console.log(message);
-            };
-
             datum.enableMapReduce();
-
-            datum.metricsMapReduce.on('reduce', function (key, sum) {
-                if(listener.calledTwice){
-                    done();
-                }
-            });
-
-            datum.metricsMapReduce.on('reduce', listener);
 
             datum.save(series, function (err, writeCount) {
                 expect(writeCount).to.eql(series.length);
                 expect(err).to.not.exist;
             });
+            done();
 
         });
 
