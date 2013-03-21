@@ -75,13 +75,28 @@ describe('Datum', function () {
 
         it('should peform a map reduce on the inserted keys', function (done) {
 
+            var callback = sinon.spy();
+
             datum.enableMapReduce();
 
             datum.save(series, function (err, writeCount) {
                 expect(writeCount).to.eql(series.length);
                 expect(err).to.not.exist;
+
+//                console.log('writeCount', writeCount);
+
+                datum.mapDb.on('merge', function(){
+                    callback();
+
+//                    console.log('called', callback.callCount);
+
+                    if (callback.callCount == 33){
+
+                        done();
+                    }
+                });
+
             });
-            done();
 
         });
 
